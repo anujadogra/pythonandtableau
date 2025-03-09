@@ -6,7 +6,7 @@ Created on Wed Sep 25 20:26:46 2024
 """
 
 import pandas as pd
-import pandas as pd 
+
 # file_name = pd.read_csv('file.csv') <-- format of read csv 
 
 data = pd.read_csv('transaction2.csv')
@@ -17,18 +17,7 @@ data = pd.read_csv('transaction2.csv', sep= ';')
 # summary of the data
 data.info()
 
-#playing around with variables 
- var = 'Hello World' 
- var = 39 
- var = 2.95
- var = 'w3f' 
-var = w3f 
-var = ['apple','orange','banana']
-var = ('apple','orange','banana')
-var = range(10)
-var = {'name':'Dee','Location':'India'}
-var = {'apple','orange','banana'}
-var = True 
+ 
 
 # working with calculations 
 # defining variables 
@@ -90,7 +79,7 @@ my_name = 'Anuja' + 'Dogra'
 
 my_date = 'Day' + '-' + 'Month' +'-' + 'Year'
 
-my_date = data['Day'] + '-' + data['Month'] +'-' + data['Year']
+# my_date = data['Day'] + '-' + data['Month'] +'-' + data['Year']
 
 #checking coloumns data type 
 print(data['Day'].dtype)
@@ -101,7 +90,7 @@ day = data['Day'].astype(str)
 
 print(day.dtype)
 
-my_date = day + '-'
+# my_date = day + '-'
 
 month = data['Month'].astype(str)
 print(month.dtype)
@@ -176,7 +165,7 @@ data = pd.merge(data, season2, on = 'Month')
 #df = df.drop('columnname' , axis=1)
 
 data = data.drop('ClientKeywords' , axis= 1)
-data = data.drop('Season_y' , axis= 1)
+# data = data.drop('Season_y' , axis= 1)
 data = data.drop('Day' , axis=1)
 data = data.drop('Month' , axis=1)
 data = data.drop('Year' , axis=1)
